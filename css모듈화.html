@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS 모듈화 </title>
+    <style>
+        :root {
+            --optionBackground: #2b6084;
+            --textcolor: skyblue;
+        }
+
+        .module {
+            display: flex;
+            gap: 20px;
+        }
+
+        .module .box {
+            width: 100px;
+            height: 100px;
+            color: var(--textcolor);
+            /* text-align: center;
+            line-height: 100px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background-color: var(--optionBackground);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .module>.box*5 -->
+    <div class="module">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+</body>
+
+</html>
